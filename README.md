@@ -1,13 +1,18 @@
-# fly.moe
+# fly.php
 
-> Fly3949 的个人页
+![Preview](https://s3.undefined.moe/images/2021/07/19/imagef28637ac3cc91d15.png)
 
-## 前言
+## 说明
 
-回复邮件授权太累了，索性直接开源吧。
+* php版本：能用就行
+* 虚拟主机其实也能跑
+* 不支持子文件夹部署
 
-## 授权协议
+## 配置
 
-* 仅限非商业使用
-* 允许二次修改
-* 需要在网页合适的位置注明作者信息或本项目地址
+请参阅 ` /config.php `
+
+## Copyright
+
+* 原作者： [fly3969](https://github.com/fly3949/fly.moe)
+* 禁止商用（不过你商用我也没办法
