@@ -19,6 +19,11 @@ Project Link: https://github.com/fly3949/fly.moe
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js" integrity="sha256-9uAoNWHdszsUDhSXf/rVcWOqKPfi5/8V5R4UdbZle2A=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js" integrity="sha256-nwhzW/P9gnvWMPOm84MK8BzQRRMdi8iutxMuYsYcOgw=" crossorigin="anonymous"></script>
     <![endif]-->
+    <style>
+        body {
+            background-image: url('<?php echo($site_bg) ?>');
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
 </head>
 
