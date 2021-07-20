@@ -19,10 +19,6 @@ $home_title = <<<EOF
 EOF;
 $home_main = $home_html_read;
 
-// 项目列表
-// $projects[0]['name']='示例项目';
-// $projects[0]['link']='//example.com';
-
 // 捐助
 
 // $donate_images[0] = '/assets/img/weixin.png';
