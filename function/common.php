@@ -1,6 +1,9 @@
 <?php
 
-header("HTTP/1.0 404 Not Found");
+$current = $_SERVER["SCRIPT_FILENAME"];
+$currentfile = explode('/',$current);
+
+if($currentfile[count($currentfile)-1]!='index.php') header("HTTP/1.0 404 Not Found");
 
 if (file_exists("templates/home.html")){
 
