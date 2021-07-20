@@ -15,4 +15,4 @@
 ## Copyright
 
 * 原作者： [fly3969](https://github.com/fly3949/fly.moe)
-* 禁止商用（不过你商用我也没办法
+* AGPLv3 Licensed
