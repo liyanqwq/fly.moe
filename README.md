@@ -1,6 +1,6 @@
 # fly.php
 
-![Preview](https://s3.undefined.moe/images/2021/07/19/imagef28637ac3cc91d15.png)
+![Preview](https://s3.undefined.moe/images/2021/07/20/liyanqwq.duiantech.cn_ad985de7a84b4ba0.png)
 
 ## 说明
 
