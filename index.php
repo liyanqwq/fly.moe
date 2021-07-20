@@ -13,7 +13,7 @@ Project Link: https://github.com/fly3949/fly.moe
     <title><?php echo($site_title) ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/minireset.css@0.0.3/minireset.min.css" integrity="sha256-rYUTtzummUpBJLuuLnVN9Hy06M9uLlZ8W8VZOyiX2WQ="
         crossorigin="anonymous">
-    <link href="//cdn.jsdelivr.net/gh/liyanqwq/fly.php@0.1.2/assets/css/main.css" rel="stylesheet">
+    <link href="<?php if(!$site_debug): ?>//cdn.jsdelivr.net/gh/liyanqwq/fly.php@0.1.2/<?php endif ?>assets/css/main.css" rel="stylesheet">
     <link href="<?php echo($site_avatar) ?>" rel="shortcut icon">
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js" integrity="sha256-9uAoNWHdszsUDhSXf/rVcWOqKPfi5/8V5R4UdbZle2A=" crossorigin="anonymous"></script>
@@ -56,10 +56,13 @@ Project Link: https://github.com/fly3949/fly.moe
                         <a goto="#projects">PROJECTS</a>
                     </li>
                     <li>
-                        <a goto="#contact">CONTACT</a>
+                        <a goto="#links">LINKS</a>
                     </li>
                     <li>
                         <a goto="#donate">DONATE</a>
+                    </li>
+                    <li>
+                        <a goto="#contact">CONTACT</a>
                     </li>
                 </ul>
                 <div class="copyright">
@@ -77,25 +80,11 @@ Project Link: https://github.com/fly3949/fly.moe
                 </section>
                 <section id="projects">
                     <h1>我的一些个人项目</h1>
-                    <ul class="project-list">
-                        <?php if(isset($projects)): ?>
-                        <?php foreach($projects as $project): ?>
-                        <a href="<?php echo($project['link']) ?>" target="_blank"><li><i class="fa fa-circle"></i> <?php echo($project['name']) ?></li></a>
-                        <?php endforeach ?>
-                        <?php else: ?>
-                        <p style="text-align:center;margin:1em 0 1em;">主人目前不想公开展示项目</p>
-                        <?php endif ?>
-                    </ul>
+                    <div class="items" id="projectsarea"></div>
                 </section>
-                <section id="contact">
-                    <h1>可以在这些地方找到我</h1>
-                    <div class="items">
-                        <?php foreach($contacts as $contact): ?>
-                        <a href="<?php echo($contact['link']) ?>" target="_blank">
-                            <i class="<?php echo($contact['icon']) ?>"></i>
-                            <span><?php echo($contact['name']) ?></span>
-                        </a>
-                        <?php endforeach ?>
+                <section id="links">
+                    <h1>这些是我的朋友</h1>
+                    <div class="items" id="friendlinks">
                     </div>
                 </section>
                 <section id="donate">
@@ -106,6 +95,11 @@ Project Link: https://github.com/fly3949/fly.moe
                         <img src="<?php echo($donate_image) ?>">
                         <?php endforeach ?>
                         <?php endif ?>
+                    </div>
+                </section>
+                <section id="contact">
+                    <h1>可以在这些地方找到我</h1>
+                    <div class="items" id="contacts">
                     </div>
                 </section>
             </div>
@@ -125,7 +119,7 @@ Project Link: https://github.com/fly3949/fly.moe
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/gh/liyanqwq/fly.php@0.1.2/assets/js/main.js"></script>
+    <script src="<?php if(!$site_debug): ?>//cdn.jsdelivr.net/gh/liyanqwq/fly.php@0.1.2/<?php endif ?>assets/js/main.js"></script>
     <script>
         <?php if($hitokoto): ?>
             getHitokoto();

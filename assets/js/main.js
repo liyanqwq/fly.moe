@@ -1,6 +1,9 @@
 $(document).ready(function () {
     $(".loading").hide();
     initTyped();
+    getLinks();
+    getProjects();
+    getContacts();
 });
 
 $('.menu a').click(function () {
@@ -18,6 +21,36 @@ function initTyped(){
 // 	  showCursor: false
 // 	};
 // 	var typed = new Typed('#typed', options);
+}
+function getLinks(){
+    $.getJSON("/templates/links.json", function(json){
+        $.each(json,function(i, obj){
+            if(!obj.logo){
+                obj.logo = 'https://gravatar.wp-china-yes.net/avatar/114514?d=mm&s=256';
+            }
+            $('#friendlinks').append('<a href="'+obj.link+'" target="_blank"><img src="'+obj.logo+'"/><span>'+obj.name+'</span></a>');
+        });
+    });
+}
+function getProjects(){
+    $.getJSON("/templates/projects.json", function(json){
+        $.each(json,function(i, obj){
+            if(!obj.logo){
+                obj.logo = 'https://s3.undefined.moe/images/2021/07/20/imagea6b5046e9b629742.png';
+            }
+            $('#projectsarea').append('<a href="'+obj.link+'" target="_blank"><img src="'+obj.logo+'"/><span>'+obj.name+'</span></a>');
+        });
+    });
+}
+function getContacts(){
+    $.getJSON("/templates/contacts.json", function(json){
+        $.each(json,function(i, obj){
+            if(!obj.icon){
+                obj.icon = 'fa fa-globe';
+            }
+            $('#contacts').append('<a href="'+obj.link+'" target="_blank"><i class="'+obj.icon+'"></i><span>'+obj.name+'</span></a>');
+        });
+    });
 }
 
 function switchTo(target) {

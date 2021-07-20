@@ -1,0 +1,17 @@
+[
+    {
+        "name": "QQ",
+        "icon": "fa fa-qq",
+        "link": "tencent://message/?uin=2517869833"
+    },
+    {
+        "name": "GitHub",
+        "icon": "fa fa-github",
+        "link": "https://github.com/liyanqwq"
+    },
+    {
+        "name": "Email",
+        "icon": "fa fa-envelope",
+        "link": "mailto:liyanqwq@duianit.cn"
+    }
+]

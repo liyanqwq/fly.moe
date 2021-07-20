@@ -466,17 +466,28 @@ ul {
     font-size: 2em;
 }
 
-#projects ul{
-    text-align: left;
+#projects .items a {
+    color: rgba(0, 0, 0, 0.8);
+    ;
+    width: 33.333%;
+    padding: .5em 0;
+    border-radius: 1em;
+    display: inline-block;
+    transition: transform .3s;
 }
 
-#projects a {
-    color: black;
+#projects .items a img {
+    height: 3.6em;
+    margin-top: 1em;
 }
 
-#projects .meta {
-    color: #999;
-    font-size: 60%;
+#projects .items a span {
+    display: block;
+    margin-top: .32em;
+}
+
+#projects .items a:hover {
+    animation: shake 5s infinite ease-in-out;
 }
 
 #contact .items {
@@ -485,6 +496,36 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+#links h1 {
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+#links .items a {
+    color: rgba(0, 0, 0, 0.8);
+    ;
+    width: 33.333%;
+    padding: .5em 0;
+    border-radius: 1em;
+    display: inline-block;
+    transition: transform .3s;
+}
+
+#links .items a img {
+    width: 3.6em;
+    margin-top: 1em;
+    border-radius: 100%;
+}
+
+#links .items a span {
+    display: block;
+    margin-top: .32em;
+}
+
+#links .items a:hover {
+    animation: shake 5s infinite ease-in-out;
 }
 
 #contact h1 {
@@ -591,7 +632,7 @@ footer #hitokoto {
 
     .left .menu li {
         width: 50%;
-        padding: .5em 0;
+        padding: .05em 0;
         display: inline-block;
     }
 
@@ -648,12 +689,35 @@ footer #hitokoto {
         font-size: 1.32em;
     }
 
-    #projects a {
-        font-size: 75%;
+    #projects .items {
+        margin-top: 1em;
     }
 
-    #projects .meta {
-        font-size: 60%;
+    #projects .items a {
+        padding: .3em 0;
+    }
+
+    #projects .items a img {
+        height: 2.4em;
+        margin-top: .2em;
+    }
+    
+    #links h1 {
+        margin-top: .3em;
+        font-size: 1.32em;
+    }
+
+    #links .items {
+        margin-top: 1em;
+    }
+
+    #links .items a {
+        padding: .3em 0;
+    }
+
+    #links .items a img {
+        width: 2.4em;
+        margin-top: .2em;
     }
 
     #contact h1 {

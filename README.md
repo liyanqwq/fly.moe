@@ -12,6 +12,15 @@
 
 请参阅 ` /config.php `
 
+## 目录说明
+
+```
+/assets 资源文件
+/function 相关php函数
+/templates 异步加载的资源文件和首页模板
+/config.php 站点配置
+```
+
 ## Copyright
 
 * 原作者： [fly3969](https://github.com/fly3949/fly.moe)
