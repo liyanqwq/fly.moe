@@ -13,7 +13,7 @@ Project Link: https://github.com/fly3949/fly.moe
     <title><?php echo($site_title) ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/minireset.css@0.0.3/minireset.min.css" integrity="sha256-rYUTtzummUpBJLuuLnVN9Hy06M9uLlZ8W8VZOyiX2WQ="
         crossorigin="anonymous">
-    <link href="<?php if(!$site_debug): ?>//cdn.jsdelivr.net/gh/liyanqwq/fly.php@0.1.2/<?php endif ?>assets/css/main.css" rel="stylesheet">
+    <link href="<?php if(!$site_debug): ?>//cdn.jsdelivr.net/gh/liyanqwq/fly.php@<?php echo($site_version) ?>/<?php endif ?>assets/css/main.css" rel="stylesheet">
     <link href="<?php echo($site_avatar) ?>" rel="shortcut icon">
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js" integrity="sha256-9uAoNWHdszsUDhSXf/rVcWOqKPfi5/8V5R4UdbZle2A=" crossorigin="anonymous"></script>
@@ -119,7 +119,7 @@ Project Link: https://github.com/fly3949/fly.moe
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="<?php if(!$site_debug): ?>//cdn.jsdelivr.net/gh/liyanqwq/fly.php@0.1.2/<?php endif ?>assets/js/main.js"></script>
+    <script src="<?php if(!$site_debug): ?>//cdn.jsdelivr.net/gh/liyanqwq/fly.php@<?php echo($site_version) ?>/<?php endif ?>assets/js/main.js"></script>
     <script>
         <?php if($hitokoto): ?>
             getHitokoto();
